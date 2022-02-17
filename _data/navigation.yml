@@ -1,9 +1,9 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Design Portfolio"
+    url: /design_portfolio/
+  - title: "Code and Testing"
+    url: /code_testing/
   - title: "About"
     url: /about/
+  - title: "CV"
+    url: /cv/
