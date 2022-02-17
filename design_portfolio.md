@@ -47,7 +47,7 @@ Another project I worked on for my Ph.D research was in building a device to aug
 ### Undergraduate Mechanical Design: Bottle Cap Redesign
 ![image-left](/assets/images/bottleCap_design.png){:width="320"}
 ![image-left](/assets/images/bottleCap_fea.jpg){:width="320"}
-![image-left](/assets/images/bottleCap_FEAResults.png){:width="300"}{: .align-left}
+![image-left](/assets/images/bottleCap_FEAResults.png){:width="238"}
 
 A course project was to redesign and improve a common object. I redesigned the disposable plastic water bottle cap to be easier to open for people with arthritis or similar issues, comparing it both to the “eco-slim” style of bottle cap, and the older, larger style. The bottle cap industry is well-documented, so the materials and equivalent torques were well defined for FEA. My redesign involved changing the circular cap to a triangular one, both to reduce slip and to increase moment arm while turning. My design had a margin of safety of 1.1, and was 62% more volume than the eco-slim caps and 30% more than the older style, but with the savings of the rest of the eco-slim bottle, would cost 32% less to produce than the older style of bottle.
 
@@ -80,8 +80,8 @@ and more complex in implementation than a simple push-rod and motor at the ankle
 I designed a pump to pressurize mineral oil to work with antagonistic fluidic actuators. A gerotor design was selected so the pump would be completely reversible, could provide constant flow per revolution, and would not require external dynamic seals.
 The tooth profiles were optimized to provide the maximum compression per revolution, and the gear thickness was generated such that the pump could reach the calculated required flowrates for the fluidic actuators with the chosen motor.
 
-![image-left](/assets/images/pump_manufactured.jpeg){:width="480"}
-![image-left](/assets/images/REU.gif){:width="440"}
+![image-left](/assets/images/pump_manufactured.jpeg){:width="610"}
+![image-left](/assets/images/REU.gif){:width="300"}
 
 The pump was professionally manufactured from aluminum and Delrin parts and assembled in-house. Flowrates and RPMs were lower than expected, partially from incomplete bleeding or leaks in the system, but also likely due to additional drag on motor from being fully submerged in oil, high resistance due to the thin transmission tubing required for use in the system, and likely high and varying torques from the high compression per tooth. A design with more teeth and higher RPM’s would likely have worked more efficiently due to these considerations.
 
