@@ -58,7 +58,7 @@ plugins:
 author:
   name   : Elizabeth Fox
   #avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Robotics Ph.D Student studying grasping and manipulation"
+  bio    : "Robotics Researcher working in motion planning, automation, and simulation"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
