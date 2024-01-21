@@ -5,6 +5,19 @@ author_profile: true
 classes: wide
 ---
 
+### ARA: Mobile Manipulation with Fanuc Arm
+
+One of the main projects I worked on at ARA was in integrating a Fanuc arm onto a robotic ground vehicle platform, and creating a motion planning system for autonomous or teleoperated pick-and-place of high-mass payloads with a hook gripper.  The robotic ground vehicle used ROS for its autonomy structure, so the first challenge was in getting two-way communication between the Fanuc arm and ROS nodes to be functional.  There were minimal existing implementation for other Fanuc arm models into ROS,  and with some modification and updates to the arm model files I was able to achieve communication through a socket into ROS.  From there, I used existing MoveIt integrations for the main motion planning, tuning parameters for better performance and hard-coding speficifc waypoints and constraints to generate and save the proper trajectories to achieve the hooking motion required for grasp acquisition.  For the teleoperated strategies, I worked to make the controls as intuitive as possible for the operator by giving them control over end-effector position rather than joint angle and minimizing the DOF's they had to control to only 3-d position and hook rotation. The existing MoveIt joystick or servoing applications were not fast and configurable enough to realize these goals, so instead I ran my own minimized inverse-kinematics calculations to directly output custom joint trajectories based on the user's inputs.  As this bypassed MoveIt's planning and collision detection, I also implemented my own solution to that, imposing position and conditional joint limits to prevent collisions between the arm, payload, and vehicle in teleoperation mode. 
+
+---
+
+
+### ARA: Ground Vehicle System Monitor and Recorder
+
+One of the projects I worked on at ARA was in debugging and improving a subsystem that collects sensor data to create recordings and a live system report to give external operators a better idea of the vehicle state, as part of a larger team I helped support.  I worked specifically in implementing failsafes to help with malfunctioning or inaccessible sensor data, as well as integrating a machine learning script into our dockerized ROS environment, modifying it to run on live audio instead of pre-recorded files. 
+
+---
+
 
 ### Ph.D Research: Stereo Camera Fiducial Tracker GUI
 ![image-center](/assets/images/stereo_test_setup.png){:width="520"}{: .align-left}
@@ -24,6 +37,13 @@ My main research has focused on augmenting underactuated hands for prosthetics; 
 
 ### Ph.D Research: Wearable Assistive Upper-Arm Device
 ![image-center](/assets/images/single_instron.png){:width="300"}{: .align-left} A side project I worked on for my Ph.D research was in building a device to augment arm strength using pneumatic artificial muscles (PAMs). This involved mechanical testing of different components to see how they would interact in our system; system modeling, primarily of the PAMs to ensure we achieved the desired outputs; as well as the development of various controllers to ensure the sensors and actuators interfaced properly.  The low-level pneumatic system ran on an MSP microcontroller, which interfaced serially with a Raspberry Pi running ROS that ran the high-level controls and communicated wirelessly with the sensors on the subject.  The model was used to improve the mid-level controller that translated the user's desired position to pneumatic setpoints for the actuators.
+
+---
+
+### Graduate Internship--RightHand Robotics: Steerable-Mirror Camera Integration
+
+During my Ph.D, I interned with RightHand Robotics, a company working on pick-and-place logistics automation systems.  While there, I worked on integrating a steerable-mirror camera into their existing state machine, using the camera to track the robot's end-effector and scan barcodes in motion.  This involved slight modifications to the existing arm's path to ensure maximum chance of barcode visibility.  It also involved quite a bit of integration work, to dynamically change mirror positions from outside of the camera's specialized software, which had OS and other requirements incompatiple with integration into the robot's state machine.
+
 
 ---
 
